@@ -32,7 +32,7 @@ body{
 }
 
 .place-input{
-    width: 80%;
+    width: 100%;
     height: auto;
     min-height: 40px;
     border: none;
@@ -69,10 +69,21 @@ body{
 .button:focus{
     outline: none;
 }
+.top-box{
+    padding: 10px 0;
+    font-size: 1.3em;
+    border-top: 3px solid rgba(255, 255, 255, 0.25);
+    border-bottom: 3px solid rgba(255,255,255, 0.25);
+    margin: 5px 0 10px 0;
+    text-align:center;
+}
 
 ul{
     list-style: none;
     font-size: 1.1em;
+}
+ul li:first-child{
+    font-size: 1.5em;
 }
 
 @media only screen and (max-width: 900px) {

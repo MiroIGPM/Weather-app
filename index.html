@@ -13,6 +13,7 @@
 <body>
     
     <div class="container">
+        <!-- DEPARTURE-->
         <div id="departure_container" class="inner_container">
             <div id="dep" class="departure box">
                 <h4>Departure weather</h4>
@@ -22,24 +23,38 @@
                     <input type="number" name="departure" class="latitude geo-input" id="departure_latitude" placeholder="latitude">
                 </div>
                 <button class="getData button" id="departure-button" onclick="getData()">Get Data</button>
-                <div>
+                <div class="top-box">
                     <ul id="departure-output">
-                        <li>Temperature:15C</li>
+                        <li><span>Temperature:</span><br>15C</li>
                         <li>Humidity:0</li>
                         <li>Dew Point: 12</li>
                     </ul>
                 </div>
                 <div id="departure-output-graph" class="graph_departure">
-                    <ul>
-                        <li>Fog</li>
-                        <li>Low Clouds</li>
-                        <li>Medium Clouds</li>
-                        <li>High Clouds</li>
-                    </ul>
+                    <div class="bottom-box">
+                        <h4>Fog</h4>
+                        <h4>0</h4>
+                    </div>
+                    <div class="bottom-box">    
+                        <h4>Low Clouds</h4>
+                        <h4>0</h4>
+                    </div class="bottom-box">
+                    <div class="bottom-box">    
+                        <h4>Medium Clouds</h4>
+                        <h4>0</h4>
+                    </div>
+                    <div class="bottom-box">
+                        <h4>High Clouds</h4>
+                        <h4>0</h4>
+                    <div>
+                    
                 </div>
             </div>
         </div>
+
+        <!--DESTINATION-->
         <div id="destination_container" class="inner_container"></div>
+
     </div>
 
 </body>
