@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Weather app</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+    <div class="container">
+        <div id="departure_container" class="inner_container">
+            <div id="dep" class="departure box">
+                <h4>Departure weather</h4>
+                <input type="text" id="departure-search" class="departure-input place-input" placeholder="Departure location">
+                <div class="long-lat-inputs">
+                    <input type="number" name="departure" id="departure_longitude" class="geo-input" placeholder="longitude">
+                    <input type="number" name="departure" class="latitude geo-input" id="departure_latitude" placeholder="latitude">
+                </div>
+                <button class="getData button" id="departure-button" onclick="getData()">Get Data</button>
+                <div>
+                    <ul id="departure-output">
+                        <li>Temperature:15C</li>
+                        <li>Humidity:0</li>
+                        <li>Dew Point: 12</li>
+                    </ul>
+                </div>
+                <div id="departure-output-graph" class="graph_departure">
+                    <ul>
+                        <li>Fog</li>
+                        <li>Low Clouds</li>
+                        <li>Medium Clouds</li>
+                        <li>High Clouds</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="destination_container" class="inner_container"></div>
+    </div>
+
+</body>
+</html>
