@@ -7,7 +7,7 @@ body{
     color: white;
     background-image: url(../images/weather_back-min.jpg);
     background-size: cover;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'roboto', sans-serif;
 }
 
 .container{
@@ -108,4 +108,10 @@ ul li:first-child{
         width: 100%;
         margin: 5% 0 5% 0;
     }
+  }
+
+  @media only screen and (max-width: 370px){
+      .geo-input{
+          width: 100%;
+      }
   }
