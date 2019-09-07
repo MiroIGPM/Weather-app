@@ -16,46 +16,86 @@
         <!-- DEPARTURE-->
         <div id="departure_container" class="inner_container">
             <div id="dep" class="departure box">
-                <h4>Departure weather</h4>
-                <input type="text" id="departure-search" class="departure-input place-input" placeholder="Departure location">
-                <div class="long-lat-inputs">
-                    <input type="number" name="departure" id="departure_longitude" class="geo-input" placeholder="longitude">
-                    <input type="number" name="departure" class="latitude geo-input" id="departure_latitude" placeholder="latitude">
+                <div class="padding">
+                    <h4>Departure weather</h4>
+                    <input type="text" id="departure-search" class="departure-input place-input" placeholder="Departure location">
+                    <div class="long-lat-inputs">
+                        <input type="number" name="departure" id="departure_longitude" class="geo-input" placeholder="longitude">
+                        <input type="number" name="departure" class="latitude geo-input" id="departure_latitude" placeholder="latitude">
+                    </div>
+                    <button class="getData button" id="departure-button" onclick="getData()">Get Data</button>
+                    <div class="top-box">
+                        <ul id="departure-output">
+                            <li><span>Temperature:</span><br>15C</li>
+                            <li>Humidity:0</li>
+                            <li>Dew Point: 12</li>
+                        </ul>
+                    </div>
                 </div>
-                <button class="getData button" id="departure-button" onclick="getData()">Get Data</button>
-                <div class="top-box">
-                    <ul id="departure-output">
-                        <li><span>Temperature:</span><br>15C</li>
-                        <li>Humidity:0</li>
-                        <li>Dew Point: 12</li>
-                    </ul>
-                </div>
-                <div id="departure-output-graph" class="graph_departure">
+                <div id="departure-output-graph" class="graph">
                     <div class="bottom-box">
-                        <h4>Fog</h4>
-                        <h4>0</h4>
+                        <h3>Fog</h3>
+                        <h3>0</h3>
                     </div>
                     <div class="bottom-box">    
-                        <h4>Low Clouds</h4>
-                        <h4>0</h4>
+                        <h3>Low Clouds</h3>
+                        <h3>0</h3>
                     </div class="bottom-box">
                     <div class="bottom-box">    
-                        <h4>Medium Clouds</h4>
-                        <h4>0</h4>
+                        <h3>Medium Clouds</h3>
+                        <h3>0</h3>
                     </div>
                     <div class="bottom-box">
-                        <h4>High Clouds</h4>
-                        <h4>0</h4>
+                        <h3>High Clouds</h3>
+                        <h3>0</h3>
                     <div>
-                    
-                </div>
-            </div>
+                </div>    
+            </div>    
+        </div>    
+        </div>
         </div>
 
-        <!--DESTINATION-->
-        <div id="destination_container" class="inner_container"></div>
 
+    <!--DESTINATION-->
+        <div id="destination_container" class="inner_container">
+            <div id="dest" class="destination box">
+                <div class="padding">
+                    <h4>Destination weather</h4>
+                    <input type="text" id="destination-search" class="destination-input place-input" placeholder="Destination location">
+                    <div class="long-lat-inputs">
+                            <input type="number" name="departure" id="destination_longitude" class="geo-input" placeholder="longitude">
+                            <input type="number" name="departure" class="latitude geo-input" id="destination_latitude" placeholder="latitude">
+                    </div>
+                    <button class="getData button" id="destination-button" onclick="getData()">Get Data</button>
+                    <div class="top-box">
+                        <ul id="destination-output">
+                                <li><span>Temperature:</span><br>15C</li>
+                                <li>Humidity:0</li>
+                                <li>Dew Point: 12</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="destination-output-graph" class="graph">
+                        <div class="bottom-box">
+                            <h3>Fog</h3>
+                            <h3>0</h3>
+                        </div>
+                        <div class="bottom-box">    
+                            <h3>Low Clouds</h3>
+                            <h3>0</h3>
+                        </div class="bottom-box">
+                        <div class="bottom-box">    
+                            <h3>Medium Clouds</h3>
+                            <h3>0</h3>
+                        </div>
+                        <div class="bottom-box">
+                            <h3>High Clouds</h3>
+                            <h3>0</h3>
+                        <div>
+                </div>  
+            </div>
+        </div> 
+        
     </div>
-
 </body>
 </html>
